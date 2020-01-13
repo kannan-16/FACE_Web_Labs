@@ -43,9 +43,9 @@ var players = [
                 year: 2015
             }
         ]
-      },
+    },
 
-      {
+    {
         name: 'Ashley Young',
         age: 34,
         debut: 2011,
@@ -58,9 +58,9 @@ var players = [
                 year: 2015
             }
         ]
-      },
+    },
 
-      {
+    {
         name: 'Ashley Young',
         age: 34,
         debut: 2011,
@@ -73,5 +73,5 @@ var players = [
                 year: 2015
             }
         ]
-      }
+    }
 ];
