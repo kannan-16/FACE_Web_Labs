@@ -143,7 +143,7 @@ function FilterByTeamxSortByNoOfAwards(team) {
   }
   for (let i = 0; i < filteredPlayers.length; i++) {
     for (let j = i + 1; j < filteredPlayers.length; j++) {
-      if (filteredPlayers[i].age < filteredPlayers[j].age) {
+      if (filteredPlayers[i].awards.length < filteredPlayers[j].awards.length) {
         let temp = filteredPlayers[i];
         filteredPlayers[i] = filteredPlayers[j];
         filteredPlayers[j] = temp;
