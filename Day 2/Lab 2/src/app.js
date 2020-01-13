@@ -16,7 +16,7 @@ function createFormation(formation) {
   let captain = {
     forward: formation[0],
     midfield: formation[1],
-    defender: formation[3]
+    defender: formation[2]
   };
   return captain;
 }
