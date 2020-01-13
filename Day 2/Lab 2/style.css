@@ -1,0 +1,4 @@
+.manager-div {
+    display: flex;
+    flex-direction: column;
+}
