@@ -9,24 +9,14 @@ function createManager(managerName, managerAge, currentTeam, trophiesWon) {
   return manager;
 }
 
-//Trial 2 - create a Player object and return it
-let captainData = [
-  "Ashley Young",
-  34,
-  2011,
-  "Manchester Utd",
-  "Defender",
-  "England"
-];
+//Trial 2 - create a formation object and return it
+let formation = [2, 3, 2];
 
-function createCaptain(captainData) {
+function createFormation(formation) {
   let captain = {
-    name: captainData[0],
-    age: captainData[1],
-    debut: captainData[2],
-    team: captainData[3],
-    position: captainData[4],
-    country: captainData[5]
+    forward: formation[0],
+    midfield: formation[1],
+    defender: formation[3]
   };
   return captain;
 }
