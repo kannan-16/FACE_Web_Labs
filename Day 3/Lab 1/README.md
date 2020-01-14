@@ -1,7 +1,7 @@
 ![logo_face](https://www.focusacademy.in/images/face_logo.svg)
 
 ## LAB | Chocolate Dispenser
-    
+
 Caitlyn loved chocolates and asked her mum to buy her a truck of chocolates. Her mum wasn't as generous, but she did buy Cait a tiny chocolate dispenser. However, she didn't teach Cait how to operate it. She would only give her one chocolate a day. Cait obviously wanted more, so much more.
 
 Cait is now on a quest to create a virtual terminal which can directly access the chocolate machine. She needs **YOU** to help her code functionalities in the back-end though. Go to the `src/app.js` file and complete all the unfinished code to satiate her sweet tooth.
@@ -52,29 +52,22 @@ Cait is annoyed with all the green chocolates she's been getting. Time to change
 
 Cait is finding it difficult to keep track of her chocolates. You'll need to create an LED that shows her how many of each chocolate are remaining. Create a function `noOfChocolates()` that _returns an array of number of chocolates_ in the order `[green, red, purple, blue, crimson, silver, pink]`.
 
-## Trial 6: One a penny, two a penny, hot cross shoots!
+## Trial 6: Let's stack em up!
 
-Cait wants to eat a lot of chocolates, but is trying to restrain herself. Therefore she has decided to only eat chocolates that are least in number. To do this though, we need the chocolates arranged properly though. Create a function `sortChocolateBasedOnCount()`
+Cait wants to eat a lot of chocolates, but is trying to restrain herself. Therefore she has decided to only eat chocolates that are least in number. To do this though, we need the chocolates arranged properly though. Create a function `sortChocolateBasedOnCount()` which sorts the chocolates in descending order of their count.
 
-## Trial 7: But, where do you come from?
+## Trial 7: They taste the same!
 
+Cait wants to able to change the color of the chocolates now. Little does she know, changing the wrapper won't change the flavor. But, well, create a function `changeChocolateColor()` which takes the arguments `number, color, finalColor` and changes n chocolates of the given color to the finalColor.
 
+## Trial 8: Convert these heretics!
 
-## Trial 8: This, that and then some more...
+Caits wants to change all chocolates of a given color to some other color. Pretty sure she's trying to get rid of all the green chocolates. Create a function `changeChocolateColorAllOfxCount()` which takes the argument `color, finalColor` and changes all chocolates of color to finalColor.
 
+## Challenge 1: Fresh pickings!
 
+Cait believes that all the best and newest chocolates are the top of the machine. She needs help removing just one chocolate of the given color from the top. Create a function `removeChocolateOfColor()` which takes an argument `color` and removes one chocolate of the given color from top.
 
-## Challenge 1: Old is gold.
+## Challenge 2: Rainbows and sunshine!
 
-
-
-## Challenge 2: Team Game
-
-
-
-## Judgement 1: The devil is in the details
-
-
-
-## Judgement 2: The golden goal
-
+Cait has found something incredible. Combining similar colored chocolates gives us an additional rainbow colored chocolate. She wants more of these, and less of her having to combine them. Create a function `dispenseRainbowChocolates()` which takes an argument `number` and _returns the number of rainbow chocolates_ dispensed for every 3 chocolates of the same color.
