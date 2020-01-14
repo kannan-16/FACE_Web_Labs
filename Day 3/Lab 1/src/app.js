@@ -56,23 +56,29 @@ function noOfChocolates(chocolates) {
 
 //Trial 6: Sort chocolates based on count in each color. Return array of colors
 function sortChocolateBasedOnCount(chocolates) {
-    numbers = noOfChocolates(chocolates);
-    var chocolateCount = {
-        "green": numbers[0],
-        "red": numbers[1],
-        "purple": numbers[2],
-        "blue": numbers[3],
-        "crimson": numbers[4],
-        "silver": numbers[5],
-        "pink": numbers[6]
-    }
-    chocolates = chocolates.sort((a, b) => {
-        if (chocolateCount[a] < chocolateCount[b]) {
-            temp = a;
-            a = b;
-            b = temp;
+    let chocolatesObj = chocolates.reduce(function (sortedChoc, choc) {
+        if (choc in sortedChoc) {
+            sortedChoc[choc]++;
+        } else {
+            sortedChoc[choc] = 1;
+        }
+        return sortedChoc;
+    }, {});
+    let sortedArray = chocolates.sort((a, b) => {
+        if (chocolatesObj[b] > chocolatesObj[a]) {
+            return 1;
+        }
+        if (chocolatesObj[b] < chocolatesObj[a]) {
+            return -1;
+        }
+        if (a > b) {
+            return 1;
+        }
+        if (a < b) {
+            return -1;
         }
     });
+    chocolates = sortedArray;
 }
 
 //Trial 7: Change ___ chocolates of ____ color to ____ color
