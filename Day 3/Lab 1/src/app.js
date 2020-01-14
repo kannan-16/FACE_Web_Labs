@@ -12,13 +12,13 @@ var chocolates = [
 ];
 
 //Trial 1: Add ___ chocolates of ____ color
-function addChocolates(color, number) {
+function addChocolates(chocolates, color, number) {
     for (let i = 0; i < number; i++)
         chocolates.unshift(color);
 }
 
 //Trial 2: Remove ___ chocolates from the top the dispenser
-function removeChocolates(number) {
+function removeChocolates(chocolates, number) {
     let removedChoco = [];
     for (let i = 0; i < number; i++)
         removedChoco.push(chocolates.shift());
@@ -26,7 +26,7 @@ function removeChocolates(number) {
 }
 
 //Trial 3: Dispense ___ chocolates
-function dispenseChocolates(number) {
+function dispenseChocolates(chocolates, number) {
     let dispensedChoco = [];
     for (let i = 0; i < number; i++)
         dispensedChoco.push(chocolates.pop());
@@ -34,7 +34,7 @@ function dispenseChocolates(number) {
 }
 
 //Trial 4: Dispense ___ chocolates of ____ color
-function dispenseChocolatesOfColor(number, color) {
+function dispenseChocolatesOfColor(chocolates, number, color) {
     let removed = [];
     for (let i = 0; i < number; i++) {
         let indexOf = chocolates.lastIndexOf(color);
@@ -45,7 +45,7 @@ function dispenseChocolatesOfColor(number, color) {
 }
 
 //Trial 5: Display ___ chocolates of each color. Return array of numbers [green, red, purple, blue, crimson, silver, pink]
-function noOfChocolates() {
+function noOfChocolates(chocolates) {
     let types = chocolates.filter(e => e.indexOf() == -1);
     let numbers = [];
     for (let i = 0; i < types.length; i++) {
@@ -55,8 +55,8 @@ function noOfChocolates() {
 }
 
 //Trial 6: Sort chocolates based on count in each color. Return array of colors
-function sortChocolateBasedOnCount() {
-    numbers = noOfChocolates();
+function sortChocolateBasedOnCount(chocolates) {
+    numbers = noOfChocolates(chocolates);
     var chocolateCount = {
         "green": numbers[0],
         "red": numbers[1],
@@ -73,11 +73,10 @@ function sortChocolateBasedOnCount() {
             b = temp;
         }
     });
-    console.log(chocolates);
 }
 
 //Trial 7: Change ___ chocolates of ____ color to ____ color
-function changeChocolateColor(number, color, finalColor) {
+function changeChocolateColor(chocolates, number, color, finalColor) {
     let chocChanged = 0;
     chocolates.map(e => {
         if (ch == color) {
@@ -93,12 +92,12 @@ function changeChocolateColor(number, color, finalColor) {
 }
 
 //Trial 8: Change all chocolates of ____ color to ____ color and display count of the changed color
-function changeChocolateColorAllOfxCount(color, finalColor) {
+function changeChocolateColorAllOfxCount(chocolates, color, finalColor) {
     return chocolates.map(e => (e == color) ? finalColor : color).reduce((acc, val) => acc += (val == finalColor) ? 1 : 0);
 }
 
 //Challenge 1: Remove one chocolate of ____ color from the top
-function removeChocolateOfColor(color) {
+function removeChocolateOfColor(chocolates, color) {
     let choc = "";
     for (let i = 0; i < chocolates.length; i++) {
         if (chocolates[i] === color) {
@@ -111,8 +110,8 @@ function removeChocolateOfColor(color) {
 }
 
 //Challenge 2: Dispense 1 rainbow colored colored chocolate for every 3 chocolates of the same color dispensed
-function dispenseRainbowChocolates(number) {
-    dispenseChocolates = dispenseChocolates(number);
+function dispenseRainbowChocolates(chocolates, number) {
+    dispenseChocolates = dispenseChocolates(chocolates, number);
     let frequency = [dispenseChocolates.length];
     let visited = -1;
 

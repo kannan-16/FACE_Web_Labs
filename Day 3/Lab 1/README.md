@@ -28,6 +28,8 @@ Cait is now on a quest to create a virtual terminal which can directly access th
 
 The `src/app.js` contains an array of 100 chocolates. We are talking about the 100 _strings_ that specifies the color of each chocolate. Available chocolates are of the colors `green, red, purple, blue, crimson, silver, pink`.
 
+Every function will take the `chocolates` array as it's first input by default.
+
 ### Tests
 
 Ohh yes! We have our beloved tests, and you already know how this works. Open the `SpecRunner.html` file on your browser and start coding to pass the test. Remember to focus on one test at a time and read carefully the instructions to understand what you have to do.
