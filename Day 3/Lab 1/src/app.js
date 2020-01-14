@@ -72,7 +72,6 @@ function sortChocolateBasedOnTotal() {
     });
     console.log(chocolates);
 }
-sortChocolateBasedOnTotal();
 
 //Trial 7: Change ___ chocolates of ____ color to ____ color
 function changeChocolateColor(noOfChocolates, color, finalColor) {
