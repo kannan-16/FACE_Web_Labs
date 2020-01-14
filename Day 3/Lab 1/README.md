@@ -54,7 +54,7 @@ Cait is finding it difficult to keep track of her chocolates. You'll need to cre
 
 ## Trial 6: One a penny, two a penny, hot cross shoots!
 
-
+Cait wants to eat a lot of chocolates, but is trying to restrain herself. Therefore she has decided to only eat chocolates that are least in number. To do this though, we need the chocolates arranged properly though. Create a function `sortChocolateBasedOnCount()`
 
 ## Trial 7: But, where do you come from?
 

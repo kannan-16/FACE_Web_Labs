@@ -51,8 +51,8 @@ function noOfChocolates() {
     return numbers;
 }
 
-//Trial 6: Sort chocolates based on total in each color. Return array of colors
-function sortChocolateBasedOnTotal() {
+//Trial 6: Sort chocolates based on count in each color. Return array of colors
+function sortChocolateBasedOnCount() {
     numbers = noOfChocolates();
     var chocolateCount = {
         "green": numbers[0],
