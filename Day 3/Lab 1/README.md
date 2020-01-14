@@ -10,7 +10,7 @@ Cait is now on a quest to create a virtual terminal which can directly access th
 
 - Fork this repo
 - Clone this repo
-- Practice JavaScript basics - _operators, conditions, loops_
+- Practice JavaScript Arrays - _higher order functions_
 
 ## Submission
 
