@@ -52,7 +52,7 @@ Cait is annoyed with all the green chocolates she's been getting. Time to change
 
 ## Trial 5: LED my chocos!
 
-Cait is finding it difficult to keep track of her chocolates. You'll need to create an LED that shows her how many of each chocolate are remaining. Create a function `noOfChocolates()` that _returns an array of number of chocolates_ in the order `[green, red, purple, blue, crimson, silver, pink]`.
+Cait is finding it difficult to keep track of her chocolates. You'll need to create an LED that shows her how many of each chocolate are remaining. Create a function `noOfChocolates()` that _returns an array of number of chocolates_ in the order `[green, silver, blue, crimson, purple, red, pink]`.
 
 ## Trial 6: Let's stack em up!
 

@@ -44,9 +44,10 @@ function dispenseChocolatesOfColor(chocolates, number, color) {
     return removed;
 }
 
-//Trial 5: Display ___ chocolates of each color. Return array of numbers [green, red, purple, blue, crimson, silver, pink]
+//Trial 5: Display ___ chocolates of each color. Return array of numbers [green, silver, blue, crimson, purple, red, pink]
 function noOfChocolates(chocolates) {
-    let types = chocolates.filter(e => e.indexOf() == -1);
+    let types = [];
+    chocolates.forEach(e => (types.indexOf(e) == -1) ? types.push(e) : "");
     let numbers = [];
     for (let i = 0; i < types.length; i++) {
         numbers[i] = chocolates.reduce((acc, val) => acc += (val == types[i]) ? 1 : 0, 0);
