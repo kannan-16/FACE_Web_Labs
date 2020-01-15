@@ -85,22 +85,26 @@ function sortChocolateBasedOnCount(chocolates) {
 //Trial 7: Change ___ chocolates of ____ color to ____ color
 function changeChocolateColor(chocolates, number, color, finalColor) {
     let chocChanged = 0;
-    chocolates.map(e => {
-        if (ch == color) {
+    chocolates = chocolates.map((e) => {
+        if (e == color) {
             chocChanged++;
             if (chocChanged <= number)
                 return finalColor;
             else
-                break;
+                return e;
         } else {
             return e;
         }
     });
+    return chocolates;
 }
 
 //Trial 8: Change all chocolates of ____ color to ____ color and display count of the changed color
 function changeChocolateColorAllOfxCount(chocolates, color, finalColor) {
-    return chocolates.map(e => (e == color) ? finalColor : color).reduce((acc, val) => acc += (val == finalColor) ? 1 : 0);
+    let changed = chocolates.map(e => (e == color) ? finalColor : e);
+    let count = changed.reduce((acc, val) => acc += (val == finalColor) ? 1 : 0, 0);
+    console.log("Chocolates changed: " + count);
+    return changed;
 }
 
 //Challenge 1: Remove one chocolate of ____ color from the top
