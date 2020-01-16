@@ -59,7 +59,7 @@ if (moreAboutHome("Riverside Manor", 25, false) == "stringnumberboolean") {
                             let p8 = "<p>Karen told Lily that her friend had come to her bedroom to meet her since she wouldn't let her out. Lily was shocked and asked her, \"What did she say?\" Karen said, \"She wants to kill you ma. I\'m very scared.\" Lily\'s face turned pale as she held Karen tightly.</p>";
 
                             filler.innerHTML = "Yay! You've completed your first Javascript Lab!" +
-                                "<br>Follow this <a href=\"https://yourstoryclub.com/short-stories-unusual-experience/thriller-short-story-mysterious-friend/\" target=\"_blank\">link</a> to read the full story.";
+                                "<br>Click <a id=\"link\" href=\"\">here</a> to read the remaining story!";
                             story.removeChild(filler);
                             story.innerHTML += p8;
                             story.appendChild(filler);
@@ -70,3 +70,10 @@ if (moreAboutHome("Riverside Manor", 25, false) == "stringnumberboolean") {
         }
     }
 }
+
+document.getElementById("link").addEventListener("click", function (e) {
+    e.preventDefault();
+    let theEnd = "<p>Lily rushed to Harold and told him what happened. Harold tried to console her and told her everything would be alright. Lily pleaded Harold, \"Won't you please take our daughter to a doctor? She said the word \'kill\'. Something is definitely wrong with her.\"</p><p>Harold ignored her statement and asked her to calm down. This only made Lily more angry. She started shouting at Harold, \"You won't let us move to the town close by! You won't take our daughter to the hospital. You don't love us! You never did!\"</p><p>Harold snapped when he heard that. He broke down, \"The problem isn't with our daughter. It's with you! Karen died 6 months ago. You and Karen were on a boat ride when she drowned in the river. THERE IS NO KAREN. THERE IS NO FRIEND. It's all in your head.\"</p><p>Lily listened to everything Harold had to say and couldn't believe what she was hearing. She started laughing hysterically and had lost herself. She fell unconcious Harold stood there crying to himself.</p><p>--THE END--</p>";
+    story.innerHTML += theEnd;
+    window.scrollBy(0, 1000);
+});
