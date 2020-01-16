@@ -34,7 +34,7 @@ switch (Number(choice)) {
     case 5:
         var count = noOfChocolates(chocolates);
         console.log(count);
-        console.log("Green: " + count[0] + " Red: " + count[1] + " Purple: " + count[2] + " Blue: " + count[3] + " Crimson: " + count[4] + " Silver: " + count[5] + " Pink: " + count[6]);
+        console.log("Green: " + count[0] + " Silver: " + count[1] + " Blue: " + count[2] + " Crimson: " + count[3] + " Purple: " + count[4] + " Red: " + count[5] + " Pink: " + count[6]);
         break;
     case 6:
         sortChocolateBasedOnCount(chocolates);
