@@ -99,12 +99,11 @@ function changeChocolateColor(chocolates, number, color, finalColor) {
     return chocolates;
 }
 
-//Trial 8: Change all chocolates of ____ color to ____ color and display count of the changed color
+//Trial 8: Change all chocolates of ____ color to ____ color and return [countOfChangedColor, chocolates]
 function changeChocolateColorAllOfxCount(chocolates, color, finalColor) {
     let changed = chocolates.map(e => (e == color) ? finalColor : e);
     let count = changed.reduce((acc, val) => acc += (val == finalColor) ? 1 : 0, 0);
-    console.log("Chocolates changed: " + count);
-    return changed;
+    return [count, changed];
 }
 
 //Challenge 1: Remove one chocolate of ____ color from the top

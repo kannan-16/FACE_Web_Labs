@@ -64,7 +64,7 @@ Cait wants to able to change the color of the chocolates now. Little does she kn
 
 ## Trial 8: Convert these heretics!
 
-Caits wants to change all chocolates of a given color to some other color. Pretty sure she's trying to get rid of all the green chocolates. Create a function `changeChocolateColorAllOfxCount()` which takes the argument `color, finalColor` and changes all chocolates of color to finalColor.
+Caits wants to change all chocolates of a given color to some other color. Pretty sure she's trying to get rid of all the green chocolates. Create a function `changeChocolateColorAllOfxCount()` which takes the argument `color, finalColor` and changes all chocolates of color to finalColor. It _returns [countOfFinalColorChocolates, chocolates]_.
 
 ## Challenge 1: Fresh pickings!
 

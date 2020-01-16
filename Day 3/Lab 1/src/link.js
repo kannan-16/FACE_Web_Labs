@@ -48,7 +48,9 @@ switch (Number(choice)) {
     case 8:
         var currentColor = prompt("Current color");
         var finalColor = prompt("Desired color");
-        chocolates = changeChocolateColorAllOfxCount(chocolates, currentColor, finalColor);
+        returnArr = changeChocolateColorAllOfxCount(chocolates, currentColor, finalColor);
+        console.log("Chocolates changed: " + returnArr[0]);
+        chocolates = returnArr[1];
         break;
     case 9:
         var color = prompt("Color to be removed");
