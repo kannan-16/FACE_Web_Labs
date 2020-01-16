@@ -60,3 +60,5 @@ Lily starts panicking once she reaches. She feels there's something wrong with h
 ## Challenge 1: Console Karen
 
 Lily's actions had a negative effect of Karen and now she's drifted further away. Lily realizes that she must do something immediately to console her daughter. She thinks of a couple of strategies that might help. Create a function `consoleKaren()` which takes an argument `strategies` and _returns a concatenated string of strategies_. Each strategy is seperated by a space.
+
+_Inspired by [Mysterious Friend](https://yourstoryclub.com/short-stories-unusual-experience/thriller-short-story-mysterious-friend/) - yourstoryclub.com_
